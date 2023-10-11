@@ -1,0 +1,228 @@
+﻿name;slug;birth_rate;region
+Niger;niger;6.73;Africa
+Angola;angola;5.76;Africa
+Congo, Democratic Republic of the;congo-democratic-republic-of-the;5.56;Africa
+Mali;mali;5.45;Africa
+Benin;benin;5.39;Africa
+Chad;chad;5.35;Africa
+Uganda;uganda;5.26;Africa
+Somalia;somalia;5.22;Africa
+South Sudan;south-sudan;5.2;Africa
+Burundi;burundi;4.96;Africa
+Guinea;guinea;4.82;Africa
+Mozambique;mozambique;4.74;Africa
+Liberia;liberia;4.73;Africa
+Guinea-Bissau;guinea-bissau;4.65;Africa
+Nigeria;nigeria;4.57;Africa
+Sudan;sudan;4.54;Africa
+Afghanistan;afghanistan;4.53;South Asia
+Cameroon;cameroon;4.5;Africa
+Zambia;zambia;4.49;Africa
+Tanzania;tanzania;4.33;Africa
+Congo, Republic of the;congo-republic-of-the;4.32;Africa
+Equatorial Guinea;equatorial-guinea;4.19;Africa
+Togo;togo;4.18;Africa
+Senegal;senegal;4.17;Africa
+Burkina Faso;burkina-faso;4.14;Africa
+Timor-Leste;timor-leste;4.09;East and Southeast Asia
+Central African Republic;central-african-republic;3.99;Africa
+Ethiopia;ethiopia;3.92;Africa
+Zimbabwe;zimbabwe;3.88;Africa
+Papua New Guinea;papua-new-guinea;3.85;East and Southeast Asia
+Sierra Leone;sierra-leone;3.71;Africa
+Gambia, The;gambia-the;3.66;Africa
+Ghana;ghana;3.61;Africa
+Madagascar;madagascar;3.55;Africa
+Eritrea;eritrea;3.5;Africa
+Cote d'Ivoire;cote-divoire;3.47;Africa
+Mauritania;mauritania;3.46;Africa
+Sao Tome and Principe;sao-tome-and-principe;3.44;Africa
+Pakistan;pakistan;3.39;South Asia
+Gaza Strip;gaza-strip;3.34;Middle East
+Malawi;malawi;3.3;Africa
+Gabon;gabon;3.26;Africa
+Rwanda;rwanda;3.23;Africa
+Kenya;kenya;3.23;Africa
+Iraq;iraq;3.17;Middle East
+Libya;libya;3.04;Africa
+Namibia;namibia;2.94;Africa
+West Bank;west-bank;2.91;Middle East
+Jordan;jordan;2.91;Middle East
+Yemen;yemen;2.91;Middle East
+Lesotho;lesotho;2.88;Africa
+Solomon Islands;solomon-islands;2.82;Australia and Oceania
+Tuvalu;tuvalu;2.81;Australia and Oceania
+Philippines;philippines;2.77;East and Southeast Asia
+Egypt;egypt;2.76;Africa
+Guam;guam;2.76;Australia and Oceania
+Syria;syria;2.74;Middle East
+Marshall Islands;marshall-islands;2.72;Australia and Oceania
+Tonga;tonga;2.7;Australia and Oceania
+Comoros;comoros;2.69;Africa
+Oman;oman;2.67;Middle East
+Vanuatu;vanuatu;2.59;Australia and Oceania
+Northern Mariana Islands;northern-mariana-islands;2.59;Australia and Oceania
+Belize;belize;2.59;Central America and the Caribbean
+Nauru;nauru;2.58;Australia and Oceania
+Guatemala;guatemala;2.57;Central America and the Caribbean
+Israel;israel;2.54;Middle East
+Algeria;algeria;2.47;Africa
+Kyrgyzstan;kyrgyzstan;2.47;Central Asia
+Tajikistan;tajikistan;2.42;Central Asia
+Eswatini;eswatini;2.41;Africa
+Haiti;haiti;2.39;Central America and the Caribbean
+Panama;panama;2.37;Central America and the Caribbean
+Botswana;botswana;2.37;Africa
+Samoa;samoa;2.37;Australia and Oceania
+Laos;laos;2.3;East and Southeast Asia
+Faroe Islands;faroe-islands;2.28;Europe
+Morocco;morocco;2.27;Africa
+Bolivia;bolivia;2.26;South America
+Fiji;fiji;2.23;Australia and Oceania
+Micronesia, Federated States of;micronesia-federated-states-of;2.22;Australia and Oceania
+Kuwait;kuwait;2.22;Middle East
+Venezuela;venezuela;2.2;South America
+Cambodia;cambodia;2.2;East and Southeast Asia
+Dominican Republic;dominican-republic;2.2;Central America and the Caribbean
+Peru;peru;2.18;South America
+Kiribati;kiribati;2.18;Australia and Oceania
+Argentina;argentina;2.17;South America
+South Africa;south-africa;2.17;Africa
+Djibouti;djibouti;2.13;Africa
+American Samoa;american-samoa;2.13;Australia and Oceania
+Cabo Verde;cabo-verde;2.11;Africa
+Bangladesh;bangladesh;2.08;South Asia
+Kazakhstan;kazakhstan;2.08;Central Asia
+India;india;2.07;South Asia
+Guyana;guyana;2.06;South America
+Jamaica;jamaica;2.05;Central America and the Caribbean
+Vietnam;vietnam;2.04;East and Southeast Asia
+Cook Islands;cook-islands;2.04;Australia and Oceania
+El Salvador;el-salvador;2.04;Central America and the Caribbean
+Turkmenistan;turkmenistan;2.03;Central Asia
+Ecuador;ecuador;2.02;South America
+France;france;2.02;Europe
+Dominica;dominica;2.01;Central America and the Caribbean
+Burma;burma;2;East and Southeast Asia
+Indonesia;indonesia;1.99;East and Southeast Asia
+Sint Maarten;sint-maarten;1.98;Central America and the Caribbean
+Honduras;honduras;1.98;Central America and the Caribbean
+Virgin Islands;virgin-islands;1.98;Central America and the Caribbean
+Sri Lanka;sri-lanka;1.97;South Asia
+Bahamas, The;bahamas-the;1.97;Central America and the Caribbean
+Curacao;curacao;1.97;Central America and the Caribbean
+Tunisia;tunisia;1.96;Africa
+Iceland;iceland;1.95;Europe
+Antigua and Barbuda;antigua-and-barbuda;1.94;Central America and the Caribbean
+Colombia;colombia;1.94;South America
+Grenada;grenada;1.92;Central America and the Caribbean
+Iran;iran;1.92;Middle East
+Suriname;suriname;1.91;South America
+Turkey (Turkiye);turkey-turkiye;1.91;Middle East
+Ireland;ireland;1.91;Europe
+Greenland;greenland;1.9;North America
+Qatar;qatar;1.9;Middle East
+Gibraltar;gibraltar;1.9;Europe
+Mongolia;mongolia;1.89;East and Southeast Asia
+Bermuda;bermuda;1.89;North America
+Korea, North;korea-north;1.89;East and Southeast Asia
+Saudi Arabia;saudi-arabia;1.89;Middle East
+Paraguay;paraguay;1.88;South America
+Isle of Man;isle-of-man;1.88;Europe
+Kosovo;kosovo;1.88;Europe
+Nepal;nepal;1.88;South Asia
+Azerbaijan;azerbaijan;1.86;Middle East
+Costa Rica;costa-rica;1.86;Central America and the Caribbean
+New Zealand;new-zealand;1.86;Australia and Oceania
+United States;united-states;1.84;North America
+New Caledonia;new-caledonia;1.84;Australia and Oceania
+Norway;norway;1.83;Europe
+Cayman Islands;cayman-islands;1.82;Central America and the Caribbean
+Aruba;aruba;1.82;Central America and the Caribbean
+Seychelles;seychelles;1.81;Africa
+Montenegro;montenegro;1.81;Europe
+Saint Martin;saint-martin;1.8;Central America and the Caribbean
+French Polynesia;french-polynesia;1.8;Australia and Oceania
+Nicaragua;nicaragua;1.78;Central America and the Caribbean
+Belgium;belgium;1.77;Europe
+Netherlands;netherlands;1.77;Europe
+Bhutan;bhutan;1.77;South Asia
+Denmark;denmark;1.77;Europe
+Saint Kitts and Nevis;saint-kitts-and-nevis;1.76;Central America and the Caribbean
+Chile;chile;1.75;South America
+Georgia;georgia;1.75;Middle East
+Brazil;brazil;1.75;South America
+Uruguay;uruguay;1.75;South America
+Brunei;brunei;1.74;East and Southeast Asia
+Finland;finland;1.74;Europe
+Malaysia;malaysia;1.74;East and Southeast Asia
+Saint Vincent and the Grenadines;saint-vincent-and-the-grenadines;1.74;Central America and the Caribbean
+Australia;australia;1.73;Australia and Oceania
+Mexico;mexico;1.73;North America
+Uzbekistan;uzbekistan;1.72;Central Asia
+Anguilla;anguilla;1.72;Central America and the Caribbean
+Saint Lucia;saint-lucia;1.72;Central America and the Caribbean
+Lebanon;lebanon;1.71;Middle East
+Wallis and Futuna;wallis-and-futuna;1.71;Australia and Oceania
+Cuba;cuba;1.71;Central America and the Caribbean
+Barbados;barbados;1.7;Central America and the Caribbean
+Turks and Caicos Islands;turks-and-caicos-islands;1.7;Central America and the Caribbean
+Maldives;maldives;1.7;South Asia
+Palau;palau;1.7;Australia and Oceania
+Liechtenstein;liechtenstein;1.69;Europe
+Sweden;sweden;1.67;Europe
+Jersey;jersey;1.66;Europe
+Bahrain;bahrain;1.66;Middle East
+Armenia;armenia;1.65;Middle East
+Saint Barthelemy;saint-barthelemy;1.64;Central America and the Caribbean
+Trinidad and Tobago;trinidad-and-tobago;1.63;Central America and the Caribbean
+Luxembourg;luxembourg;1.63;Europe
+Romania;romania;1.63;Europe
+United Kingdom;united-kingdom;1.63;Europe
+Estonia;estonia;1.62;Europe
+United Arab Emirates;united-arab-emirates;1.62;Middle East
+Saint Helena, Ascension, and Tristan da Cunha;saint-helena-ascension-and-tristan-da-cunha;1.61;Africa
+Lithuania;lithuania;1.61;Europe
+Russia;russia;1.6;Central Asia
+Slovenia;slovenia;1.6;Europe
+Saint Pierre and Miquelon;saint-pierre-and-miquelon;1.59;North America
+Guernsey;guernsey;1.59;Europe
+Moldova;moldova;1.59;Europe
+Switzerland;switzerland;1.58;Europe
+Germany;germany;1.58;Europe
+Canada;canada;1.57;North America
+Ukraine;ukraine;1.57;Europe
+Latvia;latvia;1.55;Europe
+Albania;albania;1.55;Europe
+Thailand;thailand;1.54;East and Southeast Asia
+San Marino;san-marino;1.53;Europe
+Monaco;monaco;1.53;Europe
+North Macedonia;north-macedonia;1.52;Europe
+Belarus;belarus;1.52;Europe
+Malta;malta;1.51;Europe
+Austria;austria;1.51;Europe
+Bulgaria;bulgaria;1.51;Europe
+Czechia;czechia;1.5;Europe
+Hungary;hungary;1.49;Europe
+Cyprus;cyprus;1.48;Europe
+Serbia;serbia;1.46;Europe
+Slovakia;slovakia;1.46;Europe
+Croatia;croatia;1.46;Europe
+Andorra;andorra;1.46;Europe
+China;china;1.45;East and Southeast Asia
+Portugal;portugal;1.44;Europe
+Poland;poland;1.41;Europe
+Greece;greece;1.4;Europe
+Japan;japan;1.39;East and Southeast Asia
+British Virgin Islands;british-virgin-islands;1.37;Central America and the Caribbean
+Bosnia and Herzegovina;bosnia-and-herzegovina;1.37;Europe
+Mauritius;mauritius;1.35;Africa
+Montserrat;montserrat;1.32;Central America and the Caribbean
+Spain;spain;1.29;Europe
+Puerto Rico;puerto-rico;1.25;Central America and the Caribbean
+Italy;italy;1.24;Europe
+Macau;macau;1.23;East and Southeast Asia
+Hong Kong;hong-kong;1.23;East and Southeast Asia
+Singapore;singapore;1.17;East and Southeast Asia
+Korea, South;korea-south;1.11;East and Southeast Asia
+Taiwan;taiwan;1.09;East and Southeast Asia
