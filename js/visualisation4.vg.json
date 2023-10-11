@@ -1,0 +1,69 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for the US in 2000.",
+    "data": { "url": "https://raw.githubusercontent.com/NichoHusni/Assignment2/main/Dataset/Pyramid2020_long.csv"},
+    "title": "Korea Population Demographic 2020",
+    "transform": [
+      {"calculate": "datum.Sex == 2 ? 'F' : 'M'", "as": "gender"}
+    ],
+    "spacing": 0,
+    "hconcat": [{
+      "transform": [{
+        "filter": {"field": "Sex", "equal": "F"}
+      }],
+      "title": "Female",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "age_group", "axis": null, "sort": "descending"
+        },
+        "x": {
+          "aggregate": "sum", "field": "percentage",
+          "title": "population_percentage",
+          "axis": {"format": "s"},
+          "sort": "descending"
+        },
+        "color": {
+          "field": "Sex",
+          "scale": {"range": ["#675193", "#ca8861"]},
+          "legend": null
+        }
+      }
+    }, {
+      "width": 20,
+      "view": {"stroke": null},
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {"field": "age_group", "type": "ordinal", "axis": null, "sort": "descending"},
+        "text": {"field": "age_group", "type": "nominal"}
+      }
+    }, {
+      "transform": [{
+        "filter": {"field": "Sex", "equal": "M"}
+      }],
+      "title": "Male",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "age_group", "title": null,
+          "axis": null, "sort": "descending"
+        },
+        "x": {
+          "aggregate": "sum", "field": "percentage",
+          "title": "population_percentage",
+          "axis": {"format": "s"}
+        },
+        "color": {
+          "field": "Sex",
+          "legend": null
+        }
+      }
+    }],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+  }

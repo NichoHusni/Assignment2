@@ -1,0 +1,90 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 500,
+    "width": 500,
+    "title": "Higher GDP tend to lower birth rate",
+    "data": {
+      "url": "https://raw.githubusercontent.com/NichoHusni/Assignment2/main/Dataset/BirthRate.csv"
+    },
+    "layer": [
+        {
+            "selection": {
+                "continent_highlight": {
+                    "type": "multi",
+                    "fields": ["region"],
+                    "bind": "legend"
+                }
+            },
+            "mark": "circle",
+            "encoding": {
+                "x": {
+                    "field": "gdp_percapita",
+                    "type": "quantitative",
+                    "title": "GDP per capita"
+                },
+                "y": {
+                    "field": "birth_rate",
+                    "type": "quantitative",
+                    "title": "Birth Rate per woman"
+                },
+                "color": {
+                    "field": "region",
+                    "type": "nominal"
+                },
+                "opacity": {
+                    "condition": {
+                        "selection": "continent_highlight",
+                        "value": 0.85
+                    },
+                    "value": 0.15
+                },
+                "tooltip": [
+                    {"field": "name", "type": "nominal", "title": "Country"},
+                    {"field": "birth_rate", "type": "quantitative", "format": ",", "title": "Birth rate per woman"},
+                    {"field": "gdp_percapita", "title": "GDP per Capita ($)","type": "quantitative", "format": ","}
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dx": 6,
+                "dy": -6,
+                "fontSize": 11.5,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "x": {
+                    "field": "gdp_percapita",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "birth_rate",
+                    "type": "quantitative"
+                },
+                "text": {
+                    "field": "name",
+                    "type": "nominal"
+                },
+                "color": {
+                    "value": "black"
+                },
+                "opacity": {
+                    "condition": {
+                        "test": "datum['code'] == 'PNG' || datum['code'] == 'IRL' || datum['code'] == 'LUX' || datum['code'] == 'CHE' || datum['code'] == 'MDG'",
+                        "value": 1
+                    },
+                    "value": 0
+                },
+                
+                "tooltip": [
+                    {"field": "name", "type": "nominal", "title": "Country"},
+                    {"field": "birth_rate", "type": "quantitative", "format": ",", "title": "Birth rate per woman"},
+                    {"field": "gdp_percapita", "title": "GDP per Capita ($)","type": "quantitative", "format": ","}
+                ]
+            }
+        }
+    ]
+}

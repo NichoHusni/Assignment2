@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Shares of People Without Improved Water Access (2020)",
+    "title": "Population growth is slowing, but what is the problem?",
     "width": 800,
     "height": 400,
     "projection": {"type": "equalEarth"},
@@ -12,12 +12,12 @@
         {
             "transform": [
               {
-                "lookup": "properties.NAME",
+                "lookup": "properties.ADM0_A3",
                 "from": {
                   "data": {
                     "url": "https://raw.githubusercontent.com/NichoHusni/Assignment2/main/Dataset/BirthRate.csv"
                   },
-                  "key": "name",
+                  "key": "code",
                   "fields": ["birth_rate"]
                 }
               }
