@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Assignment 2</title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Are Koreans Dying out?</h1>
+        <p style="text-align:center;">As the world has just recently reached <span style="font-weight:bold;">8 billion</span> population, the population growth has been slower than what many experts predicted years ago. This happens due to many countries started to have much lower birth rate than expected. With <span style="font-weight:bold;">South Korea</span> having the <span style="font-weight:bold;">lowest</span> birth rate in the world, it already started showing population decrease in its country.</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-5-5">
+          <div id="vis1" class="vis-container" style="padding-left: 35px;"></div>
+      </div>
+      <div class="pure-u-1-1">
+          <div>
+              <p style="text-align:center;">On average, <span style="font-weight:bold;">2 birth rate</span> per woman is needed to maintain a stable population<br>
+              A birth rate <span style="font-weight:bold;">lower</span> than 2 would cause population <span style="font-weight:bold;">decrease</span><br>
+              and a birth rate <span style="font-weight:bold;">higher</span> than 2 would cause population <span style="font-weight:bold;">increase</span></p>
+          </div>
+      </div>
+  </div>
+  
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-1">
+        <p style="text-align:center;">With the current population around <span style="font-weight:bold;">51 million</span>, it is estimated that by <span style="font-weight:bold;">2100</span>, the Korean population will shrink back to what it was in the <span style="font-weight:bold;">1950s</span>, around <span style="font-weight:bold;">24 million</span>.</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+              <!-- pure grid group -->
+              <div class="pure-g">
+                <div class="pure-u-1-1">
+                </div>
+                <div class="pure-u-1-1">
+                  <div id="vis4" class="vis-container" style="padding-left: 20px;"></div>
+                </div>
+                <div class="pure-u-1-1">
+                  <p style="text-align:center;">With Korea's current birth rate, <span style="font-weight:bold;">100 Koreans</span> would be replaced by <span style="font-weight:bold;">55 Koreans</span> by the <span style="font-weight:bold;">2nd generation</span>, and <span style="font-weight:bold;">30 Koreans</span> by the <span style="font-weight:bold;">3rd generation</span>, and eventually the 100 Koreans would be replaced by only <span style="font-weight:bold;">16 Koreans</span> by the <span style="font-weight:bold;">4th generation</span>.</p>
+                </div>
+              </div>
+              <!-- end pure grid group -->    
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+              <div class="description description-left">
+                <h2>Where is the problem?</h2>
+                <p>The problem is not that there are fewer Koreans, the problem is the <span style="font-weight:bold;">age composition</span> of the Koreans. During <span style="font-weight:bold;">1950s</span>, the median age of Korea was <span style="font-weight:bold;">15-19</span> years old. By <span style="font-weight:bold;">2040</span>, it is estimated to be <span style="font-weight:bold;">50-54</span> years old. Korea is going to be a country filled with seniors. </p>
+                <p>This would lead to problems such as, decrease in <span style="font-weight:bold;">working population</span>, increase in <span style="font-weight:bold;">healthcare cost</span>, increase in <span style="font-weight:bold;">dependency</span> ratio, and changes to <span style="font-weight:bold;">economy</span></p>
+              </div>
+            </div>
+            <div class="pure-u-1-2">
+              <div id="vis3" class="vis-container"></div>
+            </div>
+          <!-- end pure grid group -->
+
+
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    var specVis1 = "js/map.vg.json";
+    var specVis2 = "js/linechart.vg.json";
+    var specVis3 = "js/populationpyramid.vg.json";
+    var specVis4 = "js/isotype.vg.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for Korea.",
+    "data": { "url": "https://raw.githubusercontent.com/NichoHusni/Assignment2/main/Dataset/korea%20population.csv"},
+    "title": {
+        "text": "Korea Population Over The Years",
+        "fontSize": 18,
+        "offset": 5
+    },
+    "width": 800,
+    "height": 400,
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "size": 4
+            },
+            "encoding": {
+                "x": {"field":"Year", "type": "quantitative", "axis": {"grid": false}},
+                "y": {"field": "Population", "type": "quantitative"}
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "filled": true,
+                "size": 100,
+                "color": "black",
+                "opacity": 0
+            },
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative"},
+                "y": {"field": "Population", "type": "quantitative"},
+                "opacity": {
+                    "condition": {"param": "hover", "empty": false, "value": 1},
+                    "value": 0
+                },
+                "tooltip": {"field": "Population", "type": "quantitative", "title": "Population"}
+            },
+            "params": [
+                {
+                    "name": "hover",
+                    "select": {
+                        "type": "point",
+                        "encodings": ["x"],
+                        "nearest": true,
+                        "on": "mouseover",
+                        "clear": "mouseout",
+                        "translate": [-50, -50]
+                    }
+                }
+            ]
+        },
+        {
+            "data": {"values": [{"Year": 2023}]},
+            "mark": {"type": "rule", "color": "red", "strokeDash": [4, 2]},
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative"}
+            }
+        },
+        {
+            "data": {"values": [{"Year": 2023}]},
+            "mark": {"type": "text", "dy": -210, "color": "black", "align": "center", "baseline": "middle", "text": "Current Year", "fontSize": 14},
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative"}
+            }
+        },
+        {
+            "data": {"values": [{"Year": 2050}]},
+            "mark": {"type": "text", "dy": -217, "color": "black", "align": "left", "baseline": "top", "text": "U.N. Projections", "fontSize": 14},
+            "encoding": {
+                "x": {"field": "Year", "type": "quantitative"}
+            }
+        }
+    ],
+    "config": {
+        "view": {"stroke": ""},
+        "background":"#fcfceb",
+        "view": {"stroke": null}
+}
+
+}
+

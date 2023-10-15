@@ -1,0 +1,95 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A population pyramid for the US in 2000.",
+    "data": { "url": "https://raw.githubusercontent.com/NichoHusni/Assignment2/main/Dataset/pyramid1950-2040%20long.csv"},
+    "title": {"text":"Korea Population Demographic", "anchor": "middle", "offset":20},
+
+    "params": [
+        {
+            "name": "yearFilter",
+            "value": 1950,
+            "bind": {
+                "input": "range",
+                "min": 1950,
+                "max": 2040,
+                "step": 10,
+                "name": "Year: "
+            }
+        }
+    ],
+
+    "transform": [
+      {"calculate": "datum.Sex == 2 ? 'F' : 'M'", "as": "gender"},
+      {"calculate": "datum.Age == '100+' ? 100 : split(datum.Age, '-')[0] * 1", "as": "age_start"},
+      {"filter": "datum.Year == yearFilter"}
+    ],
+    "spacing": 0,
+    "hconcat": [{
+      "transform": [{
+        "filter": {"field": "Sex", "equal": "F"}
+      }],
+      "title": "Female",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Age", "axis": null,
+          "sort": {"field": "age_start", "order": "descending"}
+        },
+        "x": {
+          "aggregate": "sum", "field": "Percentage",
+          "title": "Percentage",
+          "axis": {"format": "s"},
+          "sort": "descending"
+        },
+        "color": {
+          "field": "Sex",
+          "scale": {"range": ["#675193", "#ca8861"]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Population", "type": "quantitative", "title": "Population"}
+      ]
+      }
+    }, {
+      "width": 20,
+      "view": {"stroke": null},
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {"field": "Age", "type": "ordinal", "axis": null, "sort": {"field": "age_start", "order": "descending"}},
+        "text": {"field": "Age", "type": "nominal"}
+      }
+    }, {
+      "transform": [{
+        "filter": {"field": "Sex", "equal": "M"}
+      }],
+      "title": "Male",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "Age", "title": null,
+          "axis": null, "sort": {"field": "age_start", "order": "descending"}
+        },
+        "x": {
+          "aggregate": "sum", "field": "Percentage",
+          "title": "Percentage",
+          "axis": {"format": "s"}
+        },
+        "color": {
+          "field": "Sex",
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "Population", "type": "quantitative", "title": "Population"}
+      ]
+      }
+      
+    }],
+    "config": {
+      "background":"#fcfceb",
+      "view": {"stroke": null},
+      "axis": {"grid": false}
+    }
+}

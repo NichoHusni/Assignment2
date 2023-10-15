@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A population pyramid for the US in 2000.",
+    "description": "A population pyramid for Korea in 2020.",
     "data": { "url": "https://raw.githubusercontent.com/NichoHusni/Assignment2/main/Dataset/Pyramid2020_long.csv"},
     "title": "Korea Population Demographic 2020",
     "transform": [
@@ -8,27 +8,30 @@
     ],
     "spacing": 0,
     "hconcat": [{
-      "transform": [{
-        "filter": {"field": "Sex", "equal": "F"}
-      }],
-      "title": "Female",
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "age_group", "axis": null, "sort": "descending"
-        },
-        "x": {
-          "aggregate": "sum", "field": "percentage",
-          "title": "population_percentage",
-          "axis": {"format": "s"},
-          "sort": "descending"
-        },
-        "color": {
-          "field": "Sex",
-          "scale": {"range": ["#675193", "#ca8861"]},
-          "legend": null
+      "layer": [{
+        "transform": [{"filter": {"field": "Sex", "equal": "F"}}],
+        "mark": "bar",
+        "encoding": {
+          "y": {"field": "age_group", "axis": null, "sort": "descending"},
+          "x": {
+            "aggregate": "sum", "field": "percentage",
+            "title": "population_percentage",
+            "axis": {"format": "s"},
+            "sort": "descending"
+          },
+          "color": {
+            "field": "Sex",
+            "scale": {"range": ["#675193", "#ca8861"]},
+            "legend": null
+          }
         }
-      }
+      }, {
+        "mark": {"type": "rule", "color": "red", "strokeDash": [5,5]},
+        "encoding": {
+          "y": {"datum": "35-39", "type": "ordinal"}
+        }
+      }],
+      "title": "Female"
     }, {
       "width": 20,
       "view": {"stroke": null},
@@ -41,29 +44,33 @@
         "text": {"field": "age_group", "type": "nominal"}
       }
     }, {
-      "transform": [{
-        "filter": {"field": "Sex", "equal": "M"}
-      }],
-      "title": "Male",
-      "mark": "bar",
-      "encoding": {
-        "y": {
-          "field": "age_group", "title": null,
-          "axis": null, "sort": "descending"
-        },
-        "x": {
-          "aggregate": "sum", "field": "percentage",
-          "title": "population_percentage",
-          "axis": {"format": "s"}
-        },
-        "color": {
-          "field": "Sex",
-          "legend": null
+      "layer": [{
+        "transform": [{"filter": {"field": "Sex", "equal": "M"}}],
+        "mark": "bar",
+        "encoding": {
+          "y": {"field": "age_group", "title": null, "axis": null, "sort": "descending"},
+          "x": {
+            "aggregate": "sum", "field": "percentage",
+            "title": "population_percentage",
+            "axis": {"format": "s"}
+          },
+          "color": {
+            "field": "Sex",
+            "legend": null
+          }
         }
-      }
+      }, {
+        "mark": {"type": "rule", "color": "red", "strokeDash": [5,5]},
+        "encoding": {
+          "y": {"datum": "35-39", "type": "ordinal"}
+        }
+      }],
+      "title": "Male"
     }],
     "config": {
+    "background": "#fcfceb",
       "view": {"stroke": null},
       "axis": {"grid": false}
     }
   }
+  
